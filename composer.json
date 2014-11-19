@@ -1,0 +1,29 @@
+{
+    "name": "smalldogs/html5inputs",
+    "description": "Adds support for HTML5 elements using Laravels Form interface (e.g. Form::date())",
+    "license" : "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Dustin Brownell",
+            "email": "dustin@smalldo.gs",
+            "homepage" : "https://www.smalldo.gs"
+        }
+    ],
+    "keywords" : [
+        "laravel",
+        "html5",
+        "form",
+        "input",
+        "helper"
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "files": [
+             "src/Smalldogs/Html5inputs/Html5FormMacros.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}
