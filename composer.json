@@ -21,9 +21,9 @@
         "illuminate/support": "4.2.*"
     },
     "autoload": {
-        "files": [
-             "src/Smalldogs/Html5inputs/Html5FormMacros.php"
-        ]
+        "psr-0": {
+            "Smalldogs\\Html5inputs": "src/"
+        }
     },
     "minimum-stability": "stable"
 }

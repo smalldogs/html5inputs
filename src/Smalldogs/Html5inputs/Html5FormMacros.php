@@ -18,7 +18,6 @@
  *    the alias. Instead, create the element using Input::datetimelocal()
  ***/
 
-
 /**
 * Color input - http://www.w3.org/TR/html-markup/input.color.html
 *
