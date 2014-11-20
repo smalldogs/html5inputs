@@ -1,7 +1,10 @@
 {
     "name": "smalldogs/html5inputs",
-    "description": "Adds support for HTML5 elements using Laravels Form interface (e.g. Form::date())",
+    "description": "Adds support for all 11 HTML5 elements (2 supported out of the box) using Laravels 4.2 Form interface (e.g. Form::date())",
     "license" : "BSD-2-Clause",
+    "homepage" : "https://blog.smalldo.gs/2014/04/laravel-4-html5-input-elements/",
+    "time" : "2014-11-20",
+    "issues" : "https://github.com/smalldogs/html5inputs/issues",
     "authors": [
         {
             "name": "Dustin Brownell",
