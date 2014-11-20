@@ -6,7 +6,7 @@ Composer package which adds support for HTML5 elements by extending Laravel's Fo
 Adds support for: color, date, datetime, datatime-local, month, number, range, search, tel, time, week. Laravel 
 Form interfce supports Email & Url out of the box.
 
-This package allows you to use HTML5 inputs the same way as normal textfrields <code>Form::color('inputName');</code>
+This package allows you to use HTML5 inputs the same way as normal text fields <code>Form::color('inputName');</code>
 
 How to Install
 --------------
