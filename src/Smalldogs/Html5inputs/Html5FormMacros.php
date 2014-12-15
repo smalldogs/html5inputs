@@ -37,6 +37,9 @@ Form::macro('color', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -64,6 +67,9 @@ Form::macro('date', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -94,6 +100,9 @@ Form::macro('datetime', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -124,6 +133,9 @@ Form::macro('datetimelocal', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -152,6 +164,9 @@ Form::macro('month', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -202,6 +217,9 @@ Form::macro('range', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -228,6 +246,9 @@ Form::macro('search', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -254,6 +275,9 @@ Form::macro('tel', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -280,6 +304,9 @@ Form::macro('time', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
@@ -309,6 +336,9 @@ Form::macro('week', function($name, $default = NULL, $attrs = array())
 
     if ($default) $item .= 'value="'. $default .'" ';
 
+    // If Id not explicitly set, use name (Id is needed to associate with labels)
+    if (! isset($attrs['id'])) $item .= 'id="' . $name .'" ';
+    
     if (is_array($attrs))
     {
         foreach ($attrs as $a => $v)
