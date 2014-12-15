@@ -1,5 +1,6 @@
 Laravel HTML 5 Inputs
 =====================
+![Build Status](https://travis-ci.org/smalldogs/html5inputs.svg)
 
 Composer package which adds support for HTML5 elements by extending Laravel's Form interface (e.g. Form::date())
 
