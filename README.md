@@ -1,7 +1,7 @@
 Laravel HTML 5 Inputs
 =====================
-![Build Status](https://img.shields.io/travis/smalldogs/html5inputs/v1.2.0.svg)
-![Version](http://img.shields.io/github/tag/smalldogs/html5inputs.svg)
+
+###If you are new to this package, you should be using the v2 branch
 
 Composer package which adds support for HTML5 elements by extending Laravel's Form interface (e.g. Form::date())
 
