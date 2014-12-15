@@ -22,7 +22,8 @@ class Html5InputsServiceProvider extends ServiceProvider {
 
     public function boot ()
     {
-        require __DIR__ . '/Html5FormMacros.php';
+        $this->package('smalldogs/html5inputs');
+
     }
 
 }
