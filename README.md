@@ -15,7 +15,7 @@ How to Install
 On your command line
 
 ```bash
-composer require "smalldogs/html5inputs:dev-master"
+composer require "smalldogs/html5inputs"
 ```
 
 Then add the service provider to your <code>app/config/app.php</code> providers array
