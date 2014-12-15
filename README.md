@@ -41,8 +41,8 @@ composer require "smalldogs/html5inputs:2.*"
 2. **REPLACE** the form alias with the new, extended facade, in `app/config/app.php`. 
   ```php
 'aliases' => array(
-  'Form' => 'Smalldogs\Html5inputs\Html5InputsFacade',
-//'Form' => 'Illuminate\Support\Facades\Form',
+        'Form'            => 'Smalldogs\Html5inputs\Html5InputsFacade',
+//  'Form'            => 'Illuminate\Support\Facades\Form',
 };
 ```
 
