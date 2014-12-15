@@ -1,9 +1,9 @@
 Laravel HTML 5 Inputs
 =====================
 ![Build Status](https://travis-ci.org/smalldogs/html5inputs.svg)
-[![License](http://img.shields.io/:license-bsd2-blue.svg)](http://opensource.org/licenses/BSD-2-Clause)
-![Version](http://img.shields.io/github/tag/smalldogs/html5inputs.svg)
-[![Packagist](https://img.shields.io/packagist/dt/smalldogs/html5inputs.svg)](https://packagist.org/packages/smalldogs/html5inputs)
+[![License](http://img.shields.io/:license-bsd2-blue.svg?style=flat)](http://opensource.org/licenses/BSD-2-Clause)
+![Version](http://img.shields.io/github/tag/smalldogs/html5inputs.svg?style=flat)
+[![Packagist](https://img.shields.io/packagist/dt/smalldogs/html5inputs.svg?style=flat)](https://packagist.org/packages/smalldogs/html5inputs)
 
 Composer package which adds support for HTML5 elements by extending Laravel's Form interface (e.g. Form::date())
 
