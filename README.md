@@ -13,13 +13,21 @@ This package allows you to use HTML5 inputs the same way as normal text fields <
 How to Install
 --------------
 
-On your command line
+1. On your command line
 
 ```bash
-composer require "smalldogs/html5inputs"
+composer require "smalldogs/html5inputs:2.*"
 ```
 
-Then add the service provider to your <code>app/config/app.php</code> providers array
+2. *REPLACE* the form alias with the new, extended facade, in `app/config/app.php`. 
+```php
+'aliases' => array(
+  'Form' => 'Smalldogs\Html5inputs\Html5InputsFacade',
+//'Form' => 'Illuminate\Support\Facades\Form',
+};
+```
+
+3. Add the service provider to your `app/config/app.php` providers array
 ```php
 'providers' => array(
   'Smalldogs\Html5inputs\Html5InputsServiceProvider',
@@ -27,6 +35,8 @@ Then add the service provider to your <code>app/config/app.php</code> providers 
   'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 );
 ```
+
+
 How to Use
 ----------
 
@@ -36,8 +46,14 @@ Just like your normal Form interface.
 Form::date('inputName', 'defaultValue', ['class' => 'myClass', 'required']);
 ```
 
-Get the Goods Without the Package
------------------------------------
+Changes from v1
+---------------
 
-I've made the heart of this package available as a standalone file that you can simply include in your global.php or 
-composer autoload file, if that's more your speed: https://gist.github.com/brwnll/10927191.
+The major difference between v1 and v2 is how the Form class is extended. Version 1 made use of the 
+Form::macro() method, while v2 creates a Facade which extends `\Illuminate\Support\Facades\Form` directly. 
+This allows for more direct similarity between how the new methods are handled, and the default methods (
+such as "text" or "email").
+
+This also enables [Form Model Binding](http://laravel.com/docs/4.2/html#form-model-binding) with the new HTML5
+elements.
+
