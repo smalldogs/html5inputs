@@ -15,7 +15,7 @@
     "keywords" : ["laravel","html5","form", "input","helper","form builder","extend"],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "~5.0"
     },
     "autoload": {
         "psr-0": {
