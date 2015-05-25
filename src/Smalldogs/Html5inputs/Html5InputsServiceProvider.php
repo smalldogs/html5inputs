@@ -22,8 +22,6 @@ class Html5InputsServiceProvider extends ServiceProvider {
 
     public function boot ()
     {
-        $this->package('smalldogs/html5inputs');
-
     }
 
 }
