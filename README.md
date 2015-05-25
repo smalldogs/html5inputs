@@ -7,7 +7,7 @@ Laravel HTML 5 Inputs
 
 Composer package which adds support for HTML5 elements by extending Laravel's Form interface (e.g. Form::date())
 
-Adds support for: `color`, `date`, `datetime`, `datatime-local`, `month`, `number`, `range`, `search`, `tel`, `time`, `week`. Laravel 
+Adds support for: `color`, `date`, `datetime`, `datatime-local`, `month`, `number`, `range`, `search`, `tel`, `time`, `week`. Laravel
 Form interfce supports Email & Url out of the box.
 
 This package allows you to use HTML5 inputs the same way as normal text fields <code>Form::color('inputName');</code>
@@ -26,7 +26,7 @@ Upgrade From v1
 2. In your command line, run `composer update`.
 
 
-3. Follow Step 2 below. 
+3. Follow Step 2 below.
 
 
 
@@ -39,7 +39,7 @@ New Installation
 composer require "smalldogs/html5inputs:2.*"
 ```
 
-2. **REPLACE** the form alias with the new, extended facade, in `app/config/app.php`. 
+2. **REPLACE** the form alias with the new, extended facade, in `app/config/app.php`.
   ```php
 'aliases' => array(
         'Form'            => 'Smalldogs\Html5inputs\Html5InputsFacade',
@@ -87,7 +87,7 @@ $user->phoneNumber = '123-555-5555';
 Changes from v1
 ---------------
 
-The major difference between v1 and v2 is how the Form class is extended. Version 1 made use of the 
+The major difference between v1 and v2 is how the Form class is extended. Version 1 made use of the
 [Form::macro](http://laravel.com/docs/4.2/html#custom-macros) method, while v2 creates a Facade which extends `\Illuminate\Support\Facades\Form` directly.
 
 This allows for more direct similarity between the handling of the new methods and the default methods (
